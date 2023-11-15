@@ -1,0 +1,351 @@
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+    box-sizing: border-box;
+    }
+    *::selection{
+    color: white;
+    background-color: black;
+    }
+    html,body{
+    height: 100%;
+    width: 100%;
+    }
+    #page1{
+    min-height: 100vh;
+    position:relative;
+    width:100%;
+    padding: 0 1vw;
+    padding-top:15vh;
+    }
+    #page1 h1{
+    font-size:5.5vw;
+    font-family:Futura;
+    text-transform: uppercase;
+    line-height:20vh;
+    letter-spacing:-2.5px;
+    }
+#video_container{
+height:100vh;
+width:100%;
+position: relative;
+border-radius: 25px;
+}
+#video_container video{
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 25px;
+}
+#video_container #play{
+font-size:1vw ;
+padding:5vh 5vh;
+position: fixed;
+text-transform:uppercase;
+background-color: black;
+color: white;
+border-radius:50%;
+font-family:Futura;
+opacity:0;
+scale: 0;
+border-radius: 25px;
+}
+#page2{
+margin-top:10vh;
+min-height:100vh;
+width:100%;
+position:relative;
+display: flex;
+align-items: center;
+justify-content:space-between;
+padding:2vw 1vw;
+}
+#page2 #elem{
+height:100vh;
+width:31.5%;
+border-radius: 25px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+footer {
+    height:25vh;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+footer h5{
+font-size: 4.5vh;
+}
+footer img{
+background-color: black;
+}
+#page2 #elem img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+#page2 .elem .dets{
+    height: 50px;
+    border-radius: 50px;
+    width:60%;
+    position: absolute;
+    background-color:blanchedalmond;
+    }
+    #page2 .elem .dets p{
+    font-family: futura;
+    font-size: 20px;
+    text-align: center;
+    }
+    #page2 .elem .dets:hover{
+        height: 100px;
+    }
+    #page3{
+    min-height:150vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    }
+    .child{
+    height:50vh;
+    width:34vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+    }
+    .child img{
+    height: 100%;
+    border-radius:20px;
+    }
+    .cursor{
+    height: 150px;
+    width: 150px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+    }
+    .collection1 {
+    font-family:Futura;
+    text-transform: uppercase;
+    font-size: 10vh;
+    }
+    .collection2{
+    font-family:Futura;
+    text-transform: uppercase;
+    font-size: 7.5vh;
+    }
+    .collection3 {
+    font-family:Futura;
+    text-transform: uppercase;
+    font-size: 5vh;
+    }
+    .page4{
+    min-height: 100vh;
+    width: 100%;
+    margin: 5vh;
+    }
+    .developers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    }
+    .aman,.ganapathi{
+    height:50vh;
+    width:40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    box-shadow: gray 3px 3px 3px 3px;
+    border-radius: 25px;
+    color:white;
+    background-color: black;
+    }
+    .aman img,.ganapathi img{
+    height:75%;
+    border-radius: 50px;
+    }
+    .fewd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height:50vh;
+    width: 100%;
+    box-shadow: gray 5px 5px 5px 5px;
+    border-radius:25px;
+    padding:0 2vw;
+    background-color: black;
+    color: white;
+    }
+@media(max-width:600px){
+    #page1{
+        min-height: 75vh;
+        padding: 0 1vw;
+        padding-top:20vh;
+        }
+    #page1 h1{
+        font-size:5.5vw;
+        letter-spacing:-1px;
+        }
+    #video_container{
+            height:30vh;
+            }
+     #video_container #play{
+                font-size:4.5vw ;
+                padding:7vw 5vw;
+                position: absolute;
+                opacity:1;
+                scale: 1;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                }
+                #page2{
+                    margin-top:10vh;
+                    min-height:100vh;
+                    width:100%;
+                    position:relative;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content:space-between;
+                    padding:5vw 3vw;
+                    }
+                    #page2 #elem{
+                    padding: 3vw 0;
+                    height:100vh;
+                    width:100%;
+                    }
+                    #page2 .elem .dets:hover{
+                        height: 50px;
+                    }
+                    .developers{
+                        display: flex;
+                        flex-direction:column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        
+                        }
+                        .child{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content:space-between;
+                            margin-bottom: 3vh;
+                            align-items: center;
+
+                            }
+                            .aman,.ganapathi{
+                                width: 75%;
+                                margin-bottom: 20vh;
+                             }
+                             .contact button{
+                                width: 40%;
+                                height: 20%;
+                                font-size: 2vh;
+                                margin-top: 10%;
+                                margin-left: 20%;
+                                }
+                                .collection1 {
+                                    font-size: 7vh;
+                                 }
+                            
+                
+}
+.project{
+width:100%;
+height: 25vh;
+border-radius: 25px;
+box-shadow: gray 3px 3px 3px 3px;
+padding: 1vh 4vw;
+background-color: black;
+color: white;
+}
+.about{
+height: 90%;
+width: 95%;
+box-shadow:black 15px 15px 15px 15px;
+padding: 5vw;
+border-radius: 25px;
+}
+.page5{
+min-height: 80vh;
+width: 100%;
+padding: 5vh;
+}
+.contact{
+height: 75vh;
+box-shadow:gray 10px 10px 10px 10px;
+border-radius: 25px;
+padding: 5vh;
+background-color: black;
+color: #f7f7f7;
+font-size: 5vh;
+}
+.contact button{
+background-color:white ;
+color: black;
+width: 20%;
+height: 10%;
+border-radius: 10px;
+font-size: 4vh;
+margin-top: 5%;
+margin-left: 40%;
+}
+.contact input{
+height: 10vh;
+width: 100%;
+border-radius: 10px;
+}
+.contact button:hover{
+background-color: gray;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    padding: 15px;
+    flex: 1;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color:blanchedalmond; 
+}
+#main {
+    margin-bottom: 0; /* Add this rule to remove the bottom margin */
+}
